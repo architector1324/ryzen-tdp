@@ -1,0 +1,11 @@
+[Unit]
+Description=Ryzen TDP
+Wants=ryzen-tdp.timer
+
+[Service]
+Type=oneshot
+ExecStart=/home/arch/Ryzen/tdp-service.sh
+WorkingDirectory=/home/arch/Ryzen/
+
+[Install]
+WantedBy=multi-user.target
