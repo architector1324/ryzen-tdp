@@ -3,7 +3,7 @@ Description=Ryzen TDP Timer
 Requires=ryzen-tdp.service
 
 [Timer]
-OnUnitActiveSec=8
+OnUnitActiveSec=5
 AccuracySec=1s
 Unit=ryzen-tdp.service
 
