@@ -4,8 +4,7 @@ Wants=ryzen-tdp.timer
 
 [Service]
 Type=oneshot
-ExecStart=/home/arch/Ryzen/tdp-service.sh
-WorkingDirectory=/home/arch/Ryzen/
+ExecStart=/home/arch/Ryzen/scripts/tdp-service.sh
 
 [Install]
 WantedBy=multi-user.target
