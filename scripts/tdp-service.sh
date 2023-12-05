@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WD=/home/arch/Ryzen
+WD=/home/arch/GPD/TDP
 
 tdp_lim=`$WD/scripts/get-tdp-lim.sh`
 set_tdp=`cat $WD/set_tdp`
