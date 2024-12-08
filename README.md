@@ -2,23 +2,22 @@
 Simple Ryzen TDP manager shell scripts using [RyzenAdj](https://github.com/FlyGoat/RyzenAdj).
 
 ## Usage
-1. Use it manually with shell scripts.
+Use it manually with shell scripts:
+1. Set TDP
 ```bash
 # set tdp to 8 watt
-echo 8 > set_tdp
-sudo ./scripts/tdp-service.sh
+./set-tdp.sh 8
 ```
 
 ```bash
-./scripts/tdp-gui.sh
-sudo ./scripts/tdp-service.sh
+./tdp-gui.sh
 ```
 
-2. Install systemd service:
+2. Get TDP + Limits:
 ```bash
-sudo cp service/ryzen-tdp.* /etc/systemd/system
+./get-tdp.sh
+```
 
-systemctl daemon-reload
-systemctl enable ryzen-tdp.timer
-systemctl start ryzen-tdp.timer
+```bash
+./get-tdp-lim.sh
 ```
